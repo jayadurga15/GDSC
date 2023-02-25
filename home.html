@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GDSE-MVJCE</title>
+<link rel="stylesheet" href="home.css">
+</head>
+<body>
+<section>
+<div class="circle"></div>
+<header>
+<a href="home.html"><img src="small-logo.png" class="logo"></a>
+<ul>
+<li><a href="team.html">Team</a></li>
+<li><a href="mem.html">Team Members</a></li>
+<li><a href="announ.html">Announcements</a></li>
+
+</ul>
+</header>
+<div class="content">
+<div class="textBox">
+<h2>Welcome to,<br> <span>GDSC-MVJCE</span></h2> 
+<p>Google Developer Student Clubs are university based
+     community groups for students interested in Google developer technologies. 
+     Students from all undergraduate or graduate programs with an interest in growing 
+     as a developer are welcome. By joining a GDSC, students grow their knowledge in a 
+     peer-to-peer learning 
+    environment and build solutions for local businesses and their community.</p>
+<a href="about.html">more about us</a>
+</div>
+<div class="imgBox">
+    <img src="t1.png" class="gdsc">
+</div>
+
+</div>
+
+<ul class="thumb">
+    
+<li><img src="t1.png" onclick="imgSlider('t1.png');changeCircleColor('#017143')"></li>
+<li><img src="t2.png" onclick="imgSlider('t2.png');changeCircleColor('#08719b')"></li> 
+<li><img src="t6.png" onclick="imgSlider('t6.png');changeCircleColor('#8e41cc')"></li>
+</ul>
+<ul class="sci">
+<li><a href="https://www.linkedin.com/company/gdsc-mvjce/"><img src="link.png"></a></li>
+<li><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=TwEM7vB2UEy6eTUVeQV7luj8bhBP6_5OiRFKPn81FzJURU9LUU42TlpNV1BSSTFUT0RJUVI0NVY3SS4u"><img src="1disc.png"></a></li> 
+<li><a href="https://www.instagram.com/gdscmvjce/?igshid=YmMyMTA2M2Y%3D"><img src="instagram.png"></a></li>
+</ul>
+</section>
+<script type="text/javascript">
+    function imgSlider(anything){
+        document.querySelector('.gdsc').src = anything;
+    }
+    function changeCircleColor(color){
+        const circle = document.querySelector('.circle');
+        circle.style.background = color;
+}
+
+</script>
+</body>
+</html>
